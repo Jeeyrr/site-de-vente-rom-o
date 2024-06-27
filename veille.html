@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Portfolio de Jeyron</title>
+    <link rel="stylesheet" href="veille.css">
+    <script src="veille.js" defer></script>
+</head>
+
+<body>
+    <div class="header">
+        <img id="logo" src="logobmw.png" alt="BMW Logo">
+        <h1>BMW FRANCE</h1>
+        <button id="cart-button">Panier (<span id="cart-count">0</span>)</button>
+    </div>
+    <div id="cart" class="cart">
+        <h2>Panier</h2>
+        <ul id="cart-items"></ul>
+        <p>Total : <span id="total">0</span>€</p>
+        <button id="close-cart">Fermer</button>
+    </div>
+    <div class="contenu">
+        <div class="section-tri">
+            <h1>Filtre</h1>
+            <label for="tri-select">Trier par : </label>
+            <select id="tri-select">
+                <option value="rating" data-tri="rating">Note</option>
+                <option value="name" data-tri="nom">Nom</option>
+            </select>
+        </div>
+        <div class="section-articles">
+            <div class="conteneur-articles">
+                <div class="article">
+                    <img class="image" src="bmw-e30.jpg">
+                    <article>
+                        <p>BMW E30</p>
+                        <p id="desc">Voiture de type allemande préférable en propulsion et le prix : <span data-prix="20000">20 000€</span></p>
+                        <p>Note : <span data-note="5/5">5/5 🌟</span>| Date : <span data-date="2023-11-15">15 novembre 2023</span></p>
+                    </article>
+                    <button class="add-to-cart">Ajouter au panier</button>
+                </div>
+                <div class="article">
+                    <img class="image" src="bmw-e36.jpg">
+                    <article>
+                        <p>BMW E36</p>
+                        <p id="desc">Voiture de type allemande préférable en propulsion et le prix : <span data-prix="15000">15 000€</span></p>
+                        <p>Note : <span data-note="4/5">4/5 🌟</span>| Date : <span data-date="2023-11-15">15 novembre 2023</span></p>
+                    </article>
+                    <button class="add-to-cart">Ajouter au panier</button>
+                </div>
+                <div class="article">
+                    <img class="image" src="bmw-e46.jpg">
+                    <article>
+                        <p>BMW E46</p>
+                        <p id="desc">Voiture de type allemande préférable en propulsion et le prix : <span data-prix="18000">18 000€</span></p>
+                        <p id="desc">Note : <span data-note="2/5">2/5 🌟</span>| Date : <span data-date="2023-11-15">15 novembre 2023</span></p>
+                    </article>
+                    <button class="add-to-cart">Ajouter au panier</button>
+                </div>
+                <div class="article">
+                    <img class="image" src="bmw-m2comp.jpg">
+                    <article>
+                        <p>BMW M2 COMPET</p>
+                        <p id="desc">Voiture de type allemande préférable en propulsion et le prix : <span data-prix="80000">80 000€</span></p>
+                        <p>Note : <span data-note="3/5">3/5 🌟</span>| Date : <span data-date="2023-11-15">15 novembre 2023</span></p>
+                    </article>
+                    <button class="add-to-cart">Ajouter au panier</button>
+                </div>
+                <div class="article">
+                    <img class="image" src="bmw-m3comp.jpg">
+                    <article>
+                        <p>BMW M3 COMPET</p>
+                        <p id="desc">Voiture de type allemande préférable en propulsion et le prix : <span data-prix="120000">120 000€</span></p>
+                        <p>Note : <span data-note="5/5">5/5 🌟</span>| Date : <span data-date="2023-11-15">15 novembre 2023</span></p>
+                    </article>
+                    <button class="add-to-cart">Ajouter au panier</button>
+                </div>
+                <div class="article">
+                    <img class="image" src="bmw-m3touring.jpg">
+                    <article>
+                        <p>BMW M3 TOURING</p>
+                        <p id="desc">Voiture de type allemande préférable en propulsion et le prix : <span data-prix="150000">150 000€</span></p>
+                        <p>Note : <span data-note="4/5">4/5 🌟</span>| Date : <span data-date="2023-11-15">15 novembre 2023</span></p>
+                    </article>
+                    <button class="add-to-cart">Ajouter au panier</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="https://paypal.me/jeyronjeyaraj" class="donation-link" target="_blank">Donation</a>
+</body>
+
+</html>
